@@ -1,0 +1,16 @@
+diff --git a/package.json b/package.json
+index d91fa1d428ec09b50adace9cdf1594ddbfe71054..a5f4cb9325db84bc4f024f8ea501c2a1322359ef 100644
+--- a/package.json
++++ b/package.json
+@@ -12,6 +12,11 @@
+     "@griffel/core": "^1.9.0",
+     "tslib": "^2.1.0"
+   },
++  "linaria": {
++    "tags": {
++      "makeStyles": "@griffel/linaria-processor/make-styles"
++    }
++  },
+   "peerDependencies": {
+     "react": ">=16.8.0 <19.0.0"
+   },
