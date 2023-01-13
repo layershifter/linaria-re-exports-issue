@@ -1,7 +1,7 @@
 const Babel = require("@babel/core");
 
-const resultA = Babel.transformFileSync("./code/usePopoverSurfaceStyles.js", {
+const resultA = Babel.transformFileSync("./codeB/usePopoverSurfaceStyles.js", {
   presets: ["@linaria"],
 });
 
-console.log("resultA.code", resultA.code);
+console.log("resultB.code", resultA.code);

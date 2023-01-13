@@ -31,7 +31,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.20.2":
+"@babel/core@npm:^7.20.12, @babel/core@npm:^7.20.2":
   version: 7.20.12
   resolution: "@babel/core@npm:7.20.12"
   dependencies:
@@ -1305,7 +1305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@griffel/react@npm:^1.5.2":
+"@griffel/react@npm:1.5.2":
   version: 1.5.2
   resolution: "@griffel/react@npm:1.5.2"
   dependencies:
@@ -1314,6 +1314,18 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0 <19.0.0"
   checksum: 4eb6611b65da0db3f643d2df54f97bf7566efd25ba29065a23580d199ee00f85be47a76b8a94a34e62a0e6dceb0b5931926fe6e8858acd13d85ae77467c2fa9a
+  languageName: node
+  linkType: hard
+
+"@griffel/react@patch:@griffel/react@npm%3A1.5.2#./.yarn/patches/@griffel-react-npm-1.5.2-9096ab913a.patch::locator=linaria-re-exports-issue%40workspace%3A.":
+  version: 1.5.2
+  resolution: "@griffel/react@patch:@griffel/react@npm%3A1.5.2#./.yarn/patches/@griffel-react-npm-1.5.2-9096ab913a.patch::version=1.5.2&hash=565ef8&locator=linaria-re-exports-issue%40workspace%3A."
+  dependencies:
+    "@griffel/core": ^1.9.0
+    tslib: ^2.1.0
+  peerDependencies:
+    react: ">=16.8.0 <19.0.0"
+  checksum: c8868166bb3a44fa0a4a18320b9fb63b1d70b4e8092e63722a8c68e1a19f649f6198bac6eda9831841d875a09c6d5b8b0fbca6804844ceb9ae57c74ab486b2cb
   languageName: node
   linkType: hard
 
@@ -1867,9 +1879,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "linaria-re-exports-issue@workspace:."
   dependencies:
+    "@babel/core": ^7.20.12
     "@griffel/linaria-processor": ./griffel-linaria-processor-0.0.1.tgz
     "@griffel/react": ^1.5.2
     "@linaria/babel-preset": ^4.3.3
+    prettier: ^2.8.2
     react: ^18.2.0
   languageName: unknown
   linkType: soft
@@ -1979,6 +1993,15 @@ __metadata:
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
   checksum: a2e8092dd86c8396bdba9f2b5481032848525b3dc295ce9b57896f931e63fc16f79805144321f72976383fc249584672a75cc18d6777c6b757603f372f745981
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "prettier@npm:2.8.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 740c56c2128d587d656ea1dde9bc9c3503dfc94db4f3ac387259215eeb2e216680bdad9d18a0c9feecc6b42cfa188d6fa777df4c36c1d00cedd4199074fbfbd2
   languageName: node
   linkType: hard
 
